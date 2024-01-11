@@ -1,0 +1,17 @@
+<p>filter-operator works!</p>
+<div class="cotnainer mt-3">
+<table class="table table-hover">
+<thead>
+    <tr>
+        <th>EmpName</th>
+        <th>EmpId</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let item of data|async">
+        <td>{{item.name}}</td>
+        <td>{{item.id}}</td>
+    </tr>
+</tbody>
+</table>
+</div>
